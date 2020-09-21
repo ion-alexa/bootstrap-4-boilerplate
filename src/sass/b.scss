@@ -1,0 +1,9 @@
+$theme-colors: (
+    "primary": #00904A,
+    "dark": #313131
+);
+
+$font-family-sans-serif:    'Asap', sans-serif;
+$raleway:                   'Raleway', sans-serif;    
+
+@import "node_modules/bootstrap/scss/bootstrap";

@@ -6,61 +6,347 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"
         />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Asap:wght@400;700&family=Raleway:wght@400;700;900&display=swap">
+        <script src="https://kit.fontawesome.com/ba2ef78fa4.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/b.css" />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="icon" href="./img/icon.png" />
-        <title>Basic - Bootstrap 4 with Gulp 4</title>
+        <title>AA Layout</title>
     </head>
     
     <body>
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-<a class="navbar-brand" href="./index.html">Basic</a>
-            <button class="navbar-toggler"
-            type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active"> <a class="nav-link" href="./index.html">Home<span class="sr-only">(current)</span></a>
+        <!-- Vertical navbar -->
+        <div class="vertical-nav" id="sidebar">
+            <div class="py-4 px-3 mb-4">
+                <div class="site-logo">
+                    <img src="img/logo.svg" alt="">
+                </div>
+            </div>
+            <div class="aamenu">
+                <ul>
+                    <li> <a href="about.html">We care</a>
+
+                        <ul>
+                            <li><a href="#">Miljø</a>
+
+                            </li>
+                            <li><a href="#">Vi støtter</a>
+
+                            </li>
+                            <li><a href="#">Mød vores chauffører</a>
+
+                            </li>
+                        </ul>
                     </li>
-                    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                        <div class="dropdown-menu"
-                        aria-labelledby="dropdown01"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a>
-                            <a
-                            class="dropdown-item" href="#">Something else here</a>
-                        </div>
+                    <li> <a href="#">Services</a>
+
+                        <ul>
+                            <li><a href="#">Temperaturfølsomt gods</a>
+
+                            </li>
+                            <li><a href="#">Blomster</a>
+
+                            </li>
+                            <li><a href="#">Logistik</a>
+
+                            </li>
+                            <li><a href="#">Warehousing</a>
+
+                            </li>
+                            <li><a href="#">Værksted/vaskehal</a>
+
+                            </li>
+                            <li><a href="#">Spedition</a>
+
+                            </li>
+                            <li><a href="#">Emballage</a>
+
+                            </li>
+                            <li><a href="#">IT</a>
+
+                            </li>
+                        </ul>
                     </li>
-                    <li class="nav-item"> <a class="nav-link" href="./about.html">About</a>
+                    <li> <a href="#">Nyheder</a>
+
+                    </li>
+                    <li> <a href="#">Om os</a>
+
+                        <ul>
+                            <li><a href="#">Profil/hostorie</a>
+
+                            </li>
+                            <li><a href="#">Job/HR</a>
+
+                            </li>
+                            <li><a href="#">Bliv selstændig</a>
+
+                            </li>
+                            <li><a href="#">Kontrolrapporter</a>
+
+                            </li>
+                        </ul>
+                    </li>
+                    <li> <a href="#">Kontakt</a>
+
+                        <ul>
+                            <li><a href="#">Medarbejdere</a>
+
+                            </li>
+                            <li><a href="#">Afdelinger</a>
+
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </div>
+        </div>
+        <!-- End vertical navbar -->
+        <nav id="navbar" class="bg-light-gray text-center">
+            <div class="d-flex flex-nowrap align-items-center">
+                <div class="col-2 lang flex-fill">
+                    <select name="#lang" id="lang">
+                        <option value="da">Dansk</option>
+                        <option value="en">English</option>
+                    </select>
+                </div>
+                <div class="flex-fill phone text-center txt-gray bg-light-gray">24 timers vagt
+                    <br>11 22 33 44 55</div>
+                <div class="flex-fill login p-3 text-center bg-red">Bruger login</div>
+                <div class="flex-fill d-md-none">
+                    <button id="sidebarCollapse" type="button" class="btn btn-dark bg-dark rounded-pill shadow-sm px-4 mb-4"><i class="fa fa-bars mr-2"></i>
+
+                    </button>
+                </div>
+            </div>
         </nav>
-        <div class="jumbotron bg-white text-center justify-content-center align-items-center mb-0">
-            <div class="container">
-                 <h1 class="display-3">Boilerplate Bootstrap 4+  with Gulp 4 </h1>
-                <p class="lead">Basic is a Bootstrap 4+ boilerplate with Gulp4, cross-env, Sass, sourcemaps,
-                    concat, CSS & HTML minification, uglify, image optimization, template partials,
-                    BrowserSync.</p>
-                <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a>
-                </p>
+        <div class="page-content" id="content">
+            <!-- <div class="hero">
+
+    <div class="overlay">
+        <div class="w">
+            <div class="text">
+                <h1 class="h-b txt-white">
+                    Tæt på kunderne <br>og tæt på hele Europa
+                </h1>
+            </div>
+            <div class="boxes">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus magnam molestias similique commodi deserunt non aliquid, beatae nihil, corrupti eum voluptas tenetur? Asperiores, nemo veniam illo consequatur nihil corporis nisi.
             </div>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <img class="img-fluid" src="https://images.unsplash.com/photo-1579032365451-d20e00c0ed23?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+    </div>
+
+    <div class="video">
+        <video src="img/AlexAndersenIntro.mp4" autoplay loop></video>
+    </div>
+
+</div> -->
+            <div class="hero">
+                <section class="hero-container">
+                    <video class="fullscreen" src="img/AlexAndersenIntro.mp4" playsinline
+                    autoplay muted loop></video>
+                    <div class="content">
+                        <div class="w">
+                             <h1 class="h-b txt-white">Tæt på kunderne <br>og
+                tæt på hele Europa </h1>
+
+                        </div>
+                    </div>
+                </section>
+                <div class="boxes w">
+                    <div class="big-boxes">
+                        <div class="big-box txt-white bg-light-green">
+                            <div class="box-content">
+                                <div class="title txt-raleway txt-strong">Tiltag mod covid-19!</div>
+                                <p>Læs her om de titltag vi hos Alex Andersen har gjort for at komme covid-19
+                                    til livs.</p>
+                            </div>
+                            <div class="shadow light-green"> <i class="fal fa-angle-right fa-lg"></i>
+
+                            </div>
+                        </div>
+                        <div class="big-box txt-white bg-dark-green">
+                            <div class="box-content">
+                                <div class="title txt-raleway txt-strong">De sidste 5%</div>
+                                <p>På 20 år er forureningen fra lastbiltransport reduceret med 95% i Danmark.
+                                    Nu fokuserer vi på de sidste 5%.</p>
+                            </div>
+                            <div class="shadow dark-green"> <i class="fal fa-angle-right fa-lg"></i>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-box"> <a href="#"><img src="img/box.png" alt=""></a>
+
+                    </div>
+                    <div class="txt-box">
+                        <div class="box-content">
+                            <div class="title txt-raleway txt-strong"> <span class="txt-gray">Fun</span>Facts</div>
+                            <div class="txt">"Hvert sekund sælges der en blomst der er kørt af Alex Andersen"</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <img class="img-fluid" src="https://images.unsplash.com/photo-1579032365437-9f9d275b0db0?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
-                </div>
-                <div class="col-md-4">
-                    <img class="img-fluid" src="https://images.unsplash.com/photo-1579033060982-1bb5b083f4fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+                <div class="arrow"> <i class="fal fa-2x fa-angle-down"></i>
+
                 </div>
             </div>
+            <div class="mt-5 mb-5">
+                <section class="services w">
+                    <div class="headline txt-raleway">Service, kvalitet og leveringssikkerhed i hele logistikkæden</div>
+                    <div
+                    class="box">
+                        <div>
+                            <img src="img/icon1.png" alt="">
+                        </div>
+                        <div class="title">Temperaturfølsomt gods</div>
+                        <div class="txt">Vores unikke køletrailere sørger for at kølekæden ikke brydes, og dine
+                            varer leveres i perfekt stand.</div>
+            </div>
+            <div class="box">
+                <div>
+                    <img src="img/icon1.png" alt="">
+                </div>
+                <div class="title">Temperaturfølsomt gods</div>
+                <div class="txt">Vores unikke køletrailere sørger for at kølekæden ikke brydes, og dine
+                    varer leveres i perfekt stand.</div>
+            </div>
+            <div class="box">
+                <div>
+                    <img src="img/icon1.png" alt="">
+                </div>
+                <div class="title">Temperaturfølsomt gods</div>
+                <div class="txt">Vores unikke køletrailere sørger for at kølekæden ikke brydes, og dine
+                    varer leveres i perfekt stand.</div>
+            </div>
+            <div class="box">
+                <div>
+                    <img src="img/icon1.png" alt="">
+                </div>
+                <div class="title">Temperaturfølsomt gods</div>
+                <div class="txt">Vores unikke køletrailere sørger for at kølekæden ikke brydes, og dine
+                    varer leveres i perfekt stand.</div>
+            </div>
+            <div class="box">
+                <div>
+                    <img src="img/icon1.png" alt="">
+                </div>
+                <div class="title">Temperaturfølsomt gods</div>
+                <div class="txt">Vores unikke køletrailere sørger for at kølekæden ikke brydes, og dine
+                    varer leveres i perfekt stand.</div>
+            </div>
+            </section>
         </div>
-        <footer class="footer container text-center">
+        <section class="news bg-light-gray">
+            <div class="w">
+                <div class="news-content">
+                    <div class="archive">
+                        <div class="headline">Nyheder</div>
+                        <div class="btn"><a href="#">Åbn nyhedsarkiv</a>
+
+                        </div>
+                    </div>
+                    <div class="box bg-white pointer shadow">
+                        <div class="img">
+                            <img src="img/news1.png" alt="">
+                            <div class="tag bg-white txt-raleway txt-900">Film</div>
+                        </div>
+                        <div class="content">
+                            <div class="title txt-raleway txt-900">Rosens første 24 timer</div>
+                            <div class="txt">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                eirmod tempor invidunt ut labore et dolore magna…</div>
+                        </div>
+                        <div class="arrow">
+                            <img src="img/gray-arrow.png" alt="">
+                        </div>
+                    </div>
+                    <div class="box bg-white pointer shadow">
+                        <div class="img">
+                            <img src="img/news1.png" alt="">
+                            <div class="tag bg-white txt-raleway txt-900">Film</div>
+                        </div>
+                        <div class="content">
+                            <div class="title txt-raleway txt-900">Rosens første 24 timer</div>
+                            <div class="txt">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                eirmod tempor invidunt ut labore et dolore magna…</div>
+                        </div>
+                        <div class="arrow">
+                            <img src="img/gray-arrow.png" alt="">
+                        </div>
+                    </div>
+                    <div class="box bg-white pointer shadow">
+                        <div class="img">
+                            <img src="img/news1.png" alt="">
+                            <div class="tag bg-white txt-raleway txt-900">Film</div>
+                        </div>
+                        <div class="content">
+                            <div class="title txt-raleway txt-900">Rosens første 24 timer</div>
+                            <div class="txt">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                eirmod tempor invidunt ut labore et dolore magna…</div>
+                        </div>
+                        <div class="arrow">
+                            <img src="img/gray-arrow.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="mt-5 mb-5">
+            <!-- <section class="employees w">
+    <div class="box">
+        <div class="big-box txt-white bg-dark-gray">
+            <div class="box-content">
+                <div class="title txt-raleway txt-strong">Mød vores medarbejdere</div>
+                <p>Er du den næste, så send os din ansøgning <a href="#">her</a></p>
+            </div>
+            <div class="shadow dark-gray"> 
+                <i class="fal fa-angle-right fa-lg"></i>
+            </div>
+        </div>
+    </div>
+        <div class="boxes">
+            <div class="employeebox"><img src="img/employee1.png" alt=""></div>
+            <div class="employeebox"><img src="img/employee1.png" alt=""></div>
+            <div class="employeebox"><img src="img/employee1.png" alt=""></div>
+        </div>
+</section> -->
+            <section class="employees w">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="bigbox dark-gray txt-white pointer shadow">
+                            <div class="title size-26 txt-raleway h-b">Møød vores medarbejdere</div>
+                            <div class="content size-22">Er du den næste, så send os din ansøgning <a href="#">her</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="img shadow"> <a href="#"><img src="img/employee1.png" alt=""></a>
+
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="img shadow"> <a href="#"><img src="img/employee1.png" alt=""></a>
+
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="img shadow"> <a href="#"><img src="img/employee1.png" alt=""></a>
+
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="img shadow"> <a href="#"><img src="img/employee1.png" alt=""></a>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="w"></div>
+        <footer class="footer w">
             <p>&copy; Bootstrap Basic Starter with Gulp</p>
         </footer>
+        </div>
         <script src="js/all.js"></script>
     </body>
 

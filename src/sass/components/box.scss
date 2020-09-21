@@ -1,0 +1,68 @@
+@mixin box-bg($name, $color-name) {
+    &.#{$name} {
+        background-color: $color-name;
+
+        &:hover {
+            background-color: rgba($color-name, .95);
+        }
+    }
+}
+
+.bigbox {
+    //minimum height ==> padding top bottom
+    padding: 20px 0;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    transition: all .5s;
+    border-radius: 6px;
+
+    &::after {
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+      width: 50px;
+      padding: 0 10px;
+      display: grid;
+      align-content: center;
+      text-align: center;
+      background: #404040;//linear-gradient(to right, #404040, #000);
+      font-family: "Font Awesome 5 Pro"; 
+      font-weight: 400;
+      content: "\f105";
+      border-radius: 0 6px 6px 0;
+    }
+
+    &.dark-gray {
+        @include box-bg('dark-gray', $dark-gray)
+    }
+
+    &.dark-green {
+        @include box-bg('dark-green', $dark-green)
+    }
+    
+
+    .title {
+        margin-left: 20px;
+        margin-bottom: 20px;
+
+        &.size-16 {
+            font-size: 16px;
+        }
+        &.size-26 {
+            font-size: 26px;
+        }
+    }
+    .content {
+      padding: 0 40px 0 20px;
+      &.size-16 {
+        font-size: 16px;
+      }
+      &.size-22 {
+        font-size: 22px;
+      }
+    }
+  }

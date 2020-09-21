@@ -1,0 +1,18 @@
+#navbar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 500px;
+    color: white;
+    z-index: 9999;
+
+    
+
+    .lang, .phone, .login {
+        width: 100%;
+        height: 100%;
+        flex-grow: 1;
+    }
+
+
+}

@@ -58,6 +58,7 @@ function img() {
 function serve() {
     browserSync.init({
         open: true,
+        notify: false,
         server: './docs'
     });
 }

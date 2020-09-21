@@ -1,0 +1,217 @@
+@import "colors";
+.hero {
+    position: relative;
+    height: 100vh;
+      
+      .hero-container {
+        position: relative;
+        height: 70vh;
+        margin: 0 auto;
+        //background: rgba($dark-gray, .1);
+
+        video.fullscreen {
+            position: absolute;
+            z-index: -1;
+            object-fit: cover;
+            width:100%;
+            height:100%;
+            top: 0;
+            left: 0;
+    
+          }
+      }
+      
+      .content {
+        z-index: 5;
+        padding-top: 7%;
+
+        h1 {
+            font-size: 55px;
+            text-shadow: 2px 2px $dark-gray;
+        }
+      }
+
+      .boxes {
+
+        z-index: 9999;
+
+        margin-top: -60px;
+        
+        display: grid;
+        grid-template-columns: 48% 24% 24%;
+        gap: 10px;
+        @import "boxes";
+
+        .big-boxes {
+            display: grid;
+            gap: 6px;
+        }
+    }
+
+    .arrow {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+}
+
+.services {
+  margin: 80px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 40px;
+  
+  .headline {
+      font-size: 38px;
+      font-weight: 900;
+      line-height: 42px;
+  }
+
+  .box {
+      text-align: center;
+      max-width: 80%;
+      margin: auto;
+
+      .title {
+          font-family: $raleway;
+          font-weight: 900;
+          font-size: 18px;
+          text-transform: uppercase;
+          margin-bottom: 10px;
+      }
+      .txt {
+          font-size: 17px;
+      }
+  }
+}
+
+.news {
+  padding: 80px 0;
+  
+  .news-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 10px;
+
+      .archive {
+          .headline {
+              font-family: $raleway;
+              font-size: 38px;
+              font-weight: 900;
+              margin-bottom: 30px;
+          }
+
+          .btn {
+              a {
+                  display: inline-block;
+                  padding: 10px 30px;
+                  background-color: $light-green;
+                  color: $white;
+                  border-radius: 6px;
+              }
+          }
+      }
+
+      .box {
+          border-radius: 6px;
+
+          &:hover {
+              background-color: rgba($light-green, .1);
+          }
+
+          .img {
+              position: relative;
+
+              img {
+                  width: 100%;
+              }
+
+              .tag {
+                  position: absolute;
+                  top: 0;
+                  left: 20px;
+                  display: inline-block;
+                  padding: 10px 20px;
+              }
+          }
+
+          .content {
+              padding: 20px 0 20px 20px;
+
+              .title {
+                  font-size: 26px;
+                  padding-bottom: 20px;
+              }
+          }
+
+          .arrow {
+              text-align: right;
+
+              span {
+                  display: inline-block;
+                  padding: 10px;
+                  background-color: $gray;
+              }
+          }
+      }
+  }
+
+}
+
+.employees {
+  margin: 80px 0;
+  
+
+  .box {
+    height: 100%;
+    display: grid;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    transition: all .5s;
+    border-radius: 6px;
+
+    &::after {
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+      width: 50px;
+      padding: 0 10px;
+      display: grid;
+      align-content: center;
+      text-align: center;
+      background: #404040;//linear-gradient(to right, #404040, #000);
+      font-family: "Font Awesome 5 Pro"; 
+      font-weight: 400;
+      content: "\f105";
+      border-radius: 0 6px 6px 0;
+    }
+
+    &:hover {
+      background-color: rgba($dark-gray, .95);
+    }
+
+    .title {
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+    .content {
+      font-size: 22px;
+      max-width: 80%;
+    }
+  }
+
+  .img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    img {
+      width: 100%;
+      border-radius: 6px;
+    }
+  }
+
+}
